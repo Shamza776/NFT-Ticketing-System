@@ -3,8 +3,11 @@ import {useNavigate} from 'react-router-dom'
 
 function Home() {
     const navigate = useNavigate();
-  const handleSignUp = () => {
-    navigate('/sign-up')
+  const handleSignUpAdmin = () => {
+    navigate('/sign-upAdmin')
+  }
+  const handleSignUpUser = () => {
+    navigate('/sign-upUser')
   }
   const handleSignIn = () => {
     navigate('/sign-in')
@@ -18,10 +21,11 @@ function Home() {
           Connect Wallet
         </button>
         <p>
-          Welcome! get your ticket here!
-          Sign-up below to get your ticket!
+          Welcome! Want to take part in an event? or create your own?
+          Sign-up below!
         </p>
-        <button onClick={handleSignUp}>Sign-Up</button>
+        <button onClick={handleSignUpAdmin}>Sign-Up As Admin!</button>
+        <button onClick={handleSignUpUser}>Sign-Up As User!</button>
       </div>
       <p>Already have an account, 
         <button onClick={handleSignIn}>Sign-in</button></p>
