@@ -1,5 +1,7 @@
 //import 'front-end\src\index.css'
 import {useNavigate} from 'react-router-dom'
+//import connect wallet component
+import  ConnectWallet  from '../Components/connectWallet';
 
 function Home() {
     const navigate = useNavigate();
@@ -17,9 +19,7 @@ function Home() {
     <>
       <h1>NFT TICKETING SYSTEM</h1>
       <div className="card">
-        <button>
-          Connect Wallet
-        </button>
+        <ConnectWallet/>
         <p>
           Welcome! Want to take part in an event? or create your own?
           Sign-up below!
